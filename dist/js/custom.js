@@ -20,5 +20,11 @@ $(document).ready(function(){
   $(".navibar").slideToggle();
  });
 
+  var winwid = $( window ).width();
+  if(winwid<992)
+  {
+   $("#down").appendTo(".footer .container");
+
+  }
 
 });

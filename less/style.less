@@ -35,6 +35,9 @@ ul{
 }
 .top-line{
   padding: 10px 0;
+  label{
+	margin-right:8px;
+  }
   .form-inline{
 	float: right;
 	.form-group {
@@ -61,6 +64,7 @@ ul{
 }
 .top-line a{
   padding: 10px;
+
 }
 .btn-toggle{
 
@@ -106,14 +110,11 @@ ul{
 
 }
 .header{
-  background: url("../images/top-bg.jpg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  text-align: center;
   display: inline-block;
-  padding: 345px 0;
+  text-align: center;
+  width: 100%;
 	img{
-	  max-width: 100%;
+	  width: 100%;
 	}
 }
 .about{
@@ -177,7 +178,20 @@ ul{
 .service-box{
   padding: 10px 0;
   .service-icon{
-	position:relative;
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	&:before{
+	  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	  content: "";
+	  height: 100%;
+	  position: absolute;
+	  width: 100%;
+	  transition: all 0.3s ease 0s;
+	}
+	&:hover:before{
+	  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+	}
 	img{
 	  max-width: 100%;
 	}
@@ -277,11 +291,20 @@ ul{
 
 }
 .cycle{
-  background:url("../images/recycal-bg.jpg") no-repeat;
-  background-size: cover;
-  width:100%;
+  background: rgba(0, 0, 0, 0) url("../images/recycal-bg.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 90px 20px;
   text-align: center;
-  padding: 30px 20px;
+  width: 100%;
+  position: relative;
+  &:before{
+	border: 1px solid #dfdfdf;
+	bottom: 20px;
+	content: "";
+	left: 20px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+  }
   h1{
 	color: #f7f7f7;
 	font-family: "Caviar Dreams";
@@ -437,6 +460,10 @@ ul{
 	  color: #FFFFFF;
 	}
   }
+  .navibar li{
+	margin:0 ;
+	padding:0;
+  }
 }
 
 
@@ -485,6 +512,23 @@ ul{
 	  padding: 0 19px;
 	}
   }
+  .top-line .form-inline {
+	float: right;
+	margin: 20px 0;
+	width: 100%;
+  }
+  .top-line .form-inline button{
+	float: right;
+	margin-top: -39px;
+  }
+  .nav-aria{
+	padding: 20px 0;
+	text-align: left;
+	img[src*="logo"]{
+	  width: 150px;
+	}
+  }
+
 }
 @media only screen and (min-width: 0px) and (max-width: 480px) {
 	

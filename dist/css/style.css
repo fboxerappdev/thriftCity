@@ -23,6 +23,9 @@ ul {
 .top-line {
   padding: 10px 0;
 }
+.top-line label {
+  margin-right: 8px;
+}
 .top-line .form-inline {
   float: right;
 }
@@ -86,15 +89,12 @@ ul {
   border-bottom: #3a3a3a 1px solid;
 }
 .header {
-  background: url("../images/top-bg.jpg") no-repeat;
-  background-size: cover;
-  width: 100%;
-  text-align: center;
   display: inline-block;
-  padding: 345px 0;
+  text-align: center;
+  width: 100%;
 }
 .header img {
-  max-width: 100%;
+  width: 100%;
 }
 .about {
   background: #efefef;
@@ -159,7 +159,20 @@ ul {
   padding: 10px 0;
 }
 .service-box .service-icon {
+  display: table;
+  margin: 0 auto;
   position: relative;
+}
+.service-box .service-icon:before {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: all 0.3s ease 0s;
+}
+.service-box .service-icon:hover:before {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
 }
 .service-box .service-icon img {
   max-width: 100%;
@@ -241,11 +254,20 @@ ul {
   float: right;
 }
 .cycle {
-  background: url("../images/recycal-bg.jpg") no-repeat;
-  background-size: cover;
-  width: 100%;
+  background: rgba(0, 0, 0, 0) url("../images/recycal-bg.jpg") no-repeat scroll 0 0 / cover;
+  padding: 90px 20px;
   text-align: center;
-  padding: 30px 20px;
+  width: 100%;
+  position: relative;
+}
+.cycle:before {
+  border: 1px solid #dfdfdf;
+  bottom: 20px;
+  content: "";
+  left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 .cycle h1 {
   color: #f7f7f7;
@@ -379,6 +401,10 @@ ul {
     padding: 12px 10px;
     color: #FFFFFF;
   }
+  .navibar li {
+    margin: 0 ;
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .recycal h1 {
@@ -411,6 +437,22 @@ ul {
   .about p {
     font-size: 14px;
     padding: 0 19px;
+  }
+  .top-line .form-inline {
+    float: right;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .top-line .form-inline button {
+    float: right;
+    margin-top: -39px;
+  }
+  .nav-aria {
+    padding: 20px 0;
+    text-align: left;
+  }
+  .nav-aria img[src*="logo"] {
+    width: 150px;
   }
 }
 @media (min-width: 992px) {
