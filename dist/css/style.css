@@ -47,6 +47,14 @@ ul {
 .top-line a {
   padding: 10px;
 }
+.btn-toggle {
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  right: 6px;
+  top: -38px;
+  display: none;
+}
 .nav-aria {
   background: #efefef;
   text-align: center;
@@ -64,7 +72,7 @@ ul {
 .nav-aria li {
   display: inline-block;
   margin: 0 25px;
-  padding: 0 25px;
+  padding: 0 22px;
 }
 .nav-aria a {
   color: #3a3a3a;
@@ -72,6 +80,7 @@ ul {
   font-family: "Caviar Dreams";
   font-weight: 300;
   transition: 0.5s ease-in;
+  display: inline-block;
 }
 .nav-aria a:hover {
   border-bottom: #3a3a3a 1px solid;
@@ -83,6 +92,9 @@ ul {
   text-align: center;
   display: inline-block;
   padding: 345px 0;
+}
+.header img {
+  max-width: 100%;
 }
 .about {
   background: #efefef;
@@ -109,6 +121,20 @@ ul {
 .about img {
   padding: 14px 0;
   width: 100%;
+  -moz-transition: -moz-transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  -o-transition: -o-transform 0.5s ease-in;
+}
+.about img:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 1;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  /* For Webkit browsers */
+  filter: gray;
+  /* For IE 6 - 9 */
 }
 .vedio-sec {
   background: url("../images/vedio-bg.jpg") no-repeat;
@@ -127,21 +153,32 @@ ul {
   width: 100%;
   text-align: center;
   display: inline-block;
-  padding: 60px 0;
+  padding: 50px 0;
 }
-.service i {
+.service-box {
+  padding: 10px 0;
+}
+.service-box .service-icon {
+  position: relative;
+}
+.service-box .service-icon img {
+  max-width: 100%;
+}
+.service-box .service-icon i {
   color: #ffffff;
   display: inline-block;
   font-size: 24px;
   height: 42px;
-  left: 244px;
-  padding: 5px 0;
+  left: 50%;
+  margin-left: -21px;
+  margin-top: -22px;
+  padding: 8px 0;
   position: absolute;
-  top: 363px;
+  top: 100%;
   width: 42px;
   z-index: 0;
 }
-.service i:after {
+.service-box .service-icon i:after {
   background: #3a3a3a none repeat scroll 0 0;
   content: "";
   height: 100%;
@@ -152,14 +189,14 @@ ul {
   width: 100%;
   z-index: -1;
 }
-.service h1 {
+.service-box h1 {
   font-family: "Caviar Dreams";
   font-size: 36px;
   font-weight: 300;
   color: #3a3a3a;
   margin: 35px 0 10px;
 }
-.service p {
+.service-box p {
   font-family: "Caviar Dreams";
   font-size: 18px;
   font-weight: 300;
@@ -170,7 +207,19 @@ ul {
   padding: 50px 0;
 }
 .recycal img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: none;
   width: 100%;
+  -webkit-transition: all .6s ease;
+  /* Transition for Webkit browsers */
+}
+.recycal img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  /* For Webkit browsers */
+  filter: gray;
+  /* For IE 6 - 9 */
 }
 .recycal h1 {
   font-family: "Caviar Dreams";
@@ -210,6 +259,12 @@ ul {
 }
 .cycle-icon img {
   max-width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.8s;
+}
+.cycle-icon img:hover {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 .cycle-icon p {
   color: #f7f7f7;
@@ -223,17 +278,18 @@ ul {
   padding: 70px 0 20px;
 }
 .slider h3 {
-  display: inline-block;
+  color: #3b3b3b;
   font-family: "Caviar Dreams";
-  font-size: 35px;
-  margin-bottom: 50px;
+  font-size: 47px;
+  margin: 0 0 50px;
+  text-align: center;
 }
 .slider .bx-wrapper {
   overflow: hidden;
 }
 .slider .bx-wrapper:after {
   background: transparent none repeat scroll 0 0;
-  box-shadow: 0 0 91px 100px #efefef inset;
+  box-shadow: 0 0 91px 115px #efefef inset;
   content: "";
   height: 240%;
   position: absolute;
@@ -246,6 +302,15 @@ ul {
   box-shadow: 0 0 0;
   left: 0;
   padding: 0;
+}
+.slider .bx-wrapper .bx-controls-direction a {
+  background: red none repeat scroll 0 0;
+}
+.slider .bx-wrapper .bx-controls-direction a.bx-prev {
+  background: url("../images/prev.png") no-repeat;
+}
+.slider .bx-wrapper .bx-controls-direction a.bx-next {
+  background: url("../images/next.png") no-repeat;
 }
 .footer {
   background: #e8e8e8;
@@ -269,10 +334,13 @@ ul {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  padding: 5px 50px;
+  padding: 5px 0px;
 }
 .footer img {
   padding: 10px;
+}
+.footer .footer-data {
+  float: right;
 }
 .last {
   padding: 20px;
@@ -281,4 +349,117 @@ ul {
   font-size: 12px;
   text-align: center;
   color: #3b3b3b;
+}
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
+  .btn-toggle {
+    display: block;
+  }
+  .navibar {
+    display: none;
+    height: initial;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 222px;
+    z-index: 999;
+  }
+  .navibar ul {
+    margin-top: 0;
+  }
+  .navibar li {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0 65px;
+    padding: 0 19px;
+    text-align: left;
+  }
+  .navibar a {
+    padding: 12px 10px;
+    color: #FFFFFF;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .recycal h1 {
+    font-size: 26px;
+  }
+  .recycal p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 0px;
+  }
+  .cycle h1 {
+    font-size: 30px;
+  }
+  .cycle-icon {
+    margin: 40px 0;
+    padding: 0;
+  }
+  .service-box h1 {
+    font-size: 30px;
+  }
+  .service-box p {
+    font-size: 14px;
+    margin: 0;
+  }
+  .about h1 {
+    background: none;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .about p {
+    font-size: 14px;
+    padding: 0 19px;
+  }
+}
+@media (min-width: 992px) {
+  .service-box h1 {
+    font-size: 30px;
+  }
+  .service-box p {
+    font-size: 14px;
+  }
+  .recycal h1 {
+    font-size: 26px;
+  }
+  .recycal p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .service-box h1 {
+    font-size: 36px;
+  }
+  .service-box p {
+    font-size: 18px;
+  }
+  .recycal h1 {
+    font-size: 30px;
+  }
+  .recycal p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 14px;
+  }
+  .cycle-icon p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1280px) {
+  .recycal h1 {
+    font-size: 40px;
+  }
+  .recycal p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  .cycle-icon p {
+    font-size: 17px;
+    font-weight: 600;
+  }
 }
