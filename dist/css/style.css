@@ -557,24 +557,39 @@ ul {
 }
 .gallery {
   background: url("../images/gallery-btm.jpg") no-repeat scroll 0 0 / cover;
-  padding: 80px 0;
+  padding: 60px 0;
   width: 100%;
   background-size: cover ;
 }
 .gallery h1 {
   color: #f7f7f7;
   font-size: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Caviar Dreams";
   font-weight: 300;
 }
-.gallery gallery-nav {
+.gallery .gallery-nav {
   padding: 10px 0;
-}
-.gallery gallery-nav ul {
   text-align: center;
+}
+.gallery .gallery-nav ul {
+  text-align: center;
+}
+.gallery .gallery-nav li {
+  display: inline-block;
+  float: left;
+  padding: 0 9px 25px;
+}
+.gallery .gallery-nav a {
+  color: #fff;
+  padding: 5px 19px;
+  border: #000 1px solid ;
+  transition: all 0.5s ease 0s;
+}
+.gallery .gallery-nav a:hover {
+  border: #fff 1px solid ;
 }
 .gallery img {
   padding: 15px 0;
