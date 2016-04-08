@@ -79,11 +79,10 @@ ul{
 .nav-aria{
   background: #efefef;
   text-align: center;
-  padding: 50px 0 20px 0;
+  padding: 25px 0;
 
   .navibar {
 	display: inline-block;
-	padding-top: 20px;
 	text-align: center;
   }
   ul{
@@ -103,6 +102,7 @@ ul{
 	font-weight: 300;
 	transition:0.5s ease-in;
 	display: inline-block;
+	border-bottom: #efefef 1px solid;
 	&:hover{
 	  border-bottom: #3a3a3a 1px solid;
 	}
@@ -174,6 +174,7 @@ ul{
   text-align: center;
   display: inline-block;
   padding: 50px 0;
+  float: left;
 }
 .service-box{
   padding: 10px 0;
@@ -193,7 +194,7 @@ ul{
 	  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
 	}
 	img{
-	  max-width: 100%;
+	  width: 100%;
 	}
 	i {
 	  color: #ffffff;
@@ -253,7 +254,9 @@ ul{
 
 
 .recycal{
+  display: inline-block;
   padding: 50px 0;
+  width: 100%;
   img{
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
@@ -336,10 +339,12 @@ ul{
 	padding-top: 24px;
   }
 }
-
+.second{
+  background: transparent none repeat scroll 0 0 !important;
+}
 .slider{
   background: #efefef none repeat scroll 0 0;
-  padding: 70px 0 20px;
+  padding: 30px 0 20px;
   h3{
 	color: #3b3b3b;
 	font-family: "Caviar Dreams";
@@ -405,7 +410,7 @@ ul{
 	padding: 5px 0px;
   }
   img{
-	padding: 10px;
+	margin: 10px;
   }
   .footer-data{
 	float: right;
@@ -418,109 +423,385 @@ ul{
 	text-align: center;
 	color: #3b3b3b;
   }
-}
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 0px) and (max-width: 1199px) {
-  .btn-toggle {
-	display: block;
+  span{
+	color: #ccc;
   }
-
-
-  .navibar {
-	display: none;
-	height: initial;
-	margin: 0;
-	position: absolute;
-	right: 0;
-	top: 1px;
-	width: 222px;
-	z-index: 999;
-	ul{
-	  margin-top: 0;
-	}
-	li {
-	  width: 100%;
-	  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-	  display: inline-block;
-	  margin: 0 65px;
-	  padding: 0 19px;
-	  text-align: left;
-	}
-	a {
-	  padding: 12px 10px;
-	  color: #FFFFFF;
-	}
-  }
-  .navibar li{
-	margin:0 ;
-	padding:0;
+  a{
+	font-weight: bold;
+	color: #ccc ;
   }
 }
+//about
 
-
-
-
-
-
-
-
-
-@media (min-width: 0px) {
-	
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .recycal{
-	h1 {
-	  font-size: 26px;}
-	p{
-	  font-size: 13px;
-	  line-height: 20px;
-	  margin-top: 0px;
-	}
+.about-us{
+  background: #efefef;
+  padding: 40px 0;
+  text-align: center;
+  h1{
+	color: #3b3b3b;
+	font-family: "Caviar Dreams";
+	font-size: 40px;
+	font-weight: 300;
   }
-  .cycle h1 {
+  p{
+	color: #3b3b3b;
+	font-family: "Caviar Dreams";
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.7;
+	margin-bottom: 40px;
+	padding-top: 24px;
+  }
+  img{
+	float: left;
+  }
+}
+.job-form{
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  h6{
+	color: #e71c2f;
+	font-family: "Caviar Dreams";
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 50px;
+	border-top: #000 1px solid;
+  }
+}
+.cont-form{
+  background:url("../images/form.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  h3{
+	color: #fff;
+	font-family: "Caviar Dreams";
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 30px;
+  }
+}
+.form-box{
+  padding: 0 60px;
+}
+.form-group{
+	input,select {
+	  background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+	  color: #000;
+	  height: 45px;
+	  margin: 3px 0;
+	}
+  select{
+	backround
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+  }
+  textarea{
+	background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+	height: 120px;
+	color: #000;
+  }
+}
+.form-box input[type="submit"]{
+  background: #e71c2f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Caviar Dreams";
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 10px;
+  padding: 5px 65px;
+  transition:0.5s ease-in;
+}
+//donate
+.dnt-heading{
+  background:url("../images/head-bg.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 40px 0;
+  h2{
 	font-size: 30px;
+	font-weight: lighter;
+	margin: 25px 0;
+	text-align: center;
   }
-  .cycle-icon {
-	margin: 40px 0;
-	padding: 0;
+  p{
+	font-size: 18px;
+	line-height: 1.8;
+	margin: 0 0 10px;
+	text-align: center;
   }
-  .service-box {
-	h1{font-size: 30px;}
-	p {
-	  font-size: 14px;
-	  margin: 0;
+  h3{
+	color: #000;
+	font-size: 24px;
+	margin: 30px 0;
+
+  }
+  h4{
+	background: #d62e2e none repeat scroll 0 0;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	font-size: 22px;
+	margin: 20px 5px;
+	padding: 21px;
+	text-align: center;
+	width: 49%;
+  }
+  .dnt-data{
+	padding: 30px 0;
+	}
+	.dnt-point{
+	  padding: 20px 0 0;
+	  text-align: center;
+	  h1{
+		color: 333;
+		font-size: 27px;
+		font-weight: bold;
+		padding: 0 20px;
+		text-align: center;
+		text-transform: uppercase;
+	  }
+	  p{
+		color: #333;
+		font-size: 16px;
+		line-height: 1.9;
+		margin-top: 25px;
+		padding: 0 20px;
+	  }
+	  img{
+		margin-top: 10px;
+		max-width: 100%;
+		-webkit-transition: -webkit-transform 0.3s;
+		transition: transform 0.8s;
+		&:hover{
+		  -webkit-transform: rotateY(-180deg);
+		  transform: rotateY(-180deg);
+		}
+	  }
 	}
   }
-  .about {
-	h1 {
-	  background: none;
-	  font-size: 30px;
-	  padding-bottom: 10px;
+  	.funds{
+	  display: inline-block;
+	  padding: 30px 0 0;
+	  text-align: center;
+	  span{
+		background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+		color: #ee4252;
+		font-family: Georgia;
+		font-size: 66px;
+		margin: 0 0 40px;
+	  }
+	  h5{
+		color: #ee4252;
+		font-size: 25px;
+		text-transform: uppercase;
+	  }
+	  h3{
+		color: #3a3a3a;
+		font-size: 18px;
+	  }
 	}
-	p {
-	  font-size: 14px;
-	  padding: 0 19px;
+
+//gallery
+
+.gallery{
+  background:url("../images/gallery-btm.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 80px 0;
+  width: 100%;
+  background-size:cover ;
+  h1{
+	color: #f7f7f7;
+	font-size: 40px;
+	margin-bottom: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Caviar Dreams";
+	font-weight: 300;
+  }
+  gallery-nav{
+	padding: 10px 0;
+	ul{
+	  text-align: center;
+	}
+	li{
+
+	}
+	a{
+
 	}
   }
-  .top-line .form-inline {
-	float: right;
-	margin: 20px 0;
+
+
+  img{
+	padding: 15px 0;
+	width: 100%;
+	-webkit-filter: blur(0px); /* Chrome, Safari, Opera */
+	filter: blur(0px);
+	transition:0.3s ease-in;
+	&:hover{
+	  -webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+	  filter: blur(1px);
+	}
+
+  }
+
+}
+/*jobs*/
+.jobs{
+  background: rgba(0, 0, 0, 0) url("../images/head-bg.jpg") no-repeat scroll 0 0 / cover ;
+  padding: 40px 0;
+}
+.address{
+  padding: 30px 0;
+  text-align: center;
+  h1{
+	color: #e71c2f;
+	font-size: 30px;
+	margin-bottom: 40px;
+	border-bottom: #e71c2f 2px solid;
+	padding: 10px 0;
+  }
+  img{
 	width: 100%;
   }
-  .top-line .form-inline button{
-	float: right;
-	margin-top: -39px;
+  h5{
+	color: #464646;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.7;
+	margin-top: 20px;
   }
+}
+.brows{
+  color: #B0B0B0;
+  font-weight: normal;
+  height: 44px;
+  line-height: 30px;
+  margin-top: 3px;
+}
+input[type="file"] {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//responsive
+
+@media only screen and (min-width: 0px) and (max-width: 1199px) {
+	.btn-toggle {
+	  display: block;
+	}
+	.navibar {
+	  display: none;
+	  height: initial;
+	  margin: 0;
+	  position: absolute;
+	  right: 0;
+	  top: 1px;
+	  width: 222px;
+	  z-index: 999;
+	  ul{
+		margin-top: 25px;
+	  }
+	  li {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+		display: inline-block;
+		margin: 0 65px;
+		padding: 0 19px;
+		text-align: left;
+	  }
+	  a {
+		padding: 12px 10px;
+		color: #FFFFFF;
+	  }
+	}
+	.navibar li{
+	  margin:0 ;
+	  padding:0;
+	}
+  }
+
+
+//768
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+.recycal{
+  h1{
+	font-size: 26px;}
+  p{
+	font-size: 13px;
+	line-height: 20px;
+	margin-top: 0px;
+  }
+}
+.cycle h1{
+  font-size: 30px;
+}
+.cycle-icon{
+  margin: 40px 0;
+  padding: 0;
+}
+.service-box{
+  h1{
+	font-size: 30px;
+  }
+  p{
+	font-size: 14px;
+	margin: 0;
+  }
+}
+.about {
+  h1 {
+	background: none;
+	font-size: 30px;
+	padding-bottom: 10px;
+  }
+  p {
+	font-size: 14px;
+	padding: 0 19px;
+  }
+}
+.top-line .form-inline
+{
+  float: right;
+  margin: 20px 0;
+  width: 100%;
+}
+.top-line .form-inline button{
+  float: right;
+  margin-top: -39px;
+						}
   .nav-aria{
 	padding: 20px 0;
 	text-align: left;
@@ -528,55 +809,99 @@ ul{
 	  width: 150px;
 	}
   }
+  .navibar ul {
+	margin-top: 20px;
+  }
+  .form-box {
+	padding: 0;
+  }
+  .form-box input[type="submit"] {
+	font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navibar ul {
+	margin-top: 20px;
+  }
+  .about-us p {
+		font-size: 15px;
+  }
+  .recycal p {
+	font-size: 16px;
+  }
+  .recycal h1 {
+	display: inline-block;
+	font-size: 26px;
+	margin-top: 30px;
+  }
+  .form-box {
+	padding: 0;
+  }
+  .funds span{
+	font-size: 50px;
+  }
 
 }
-@media only screen and (min-width: 0px) and (max-width: 480px) {
-	
-}
+//992
 @media (min-width: 992px) {
   .service-box {
 	h1{font-size: 30px;}
 	p {
 	  font-size: 14px;
-  	}
+	}
   }
   .recycal{
-	h1 {
+	h1{
 	  font-size: 26px;}
 	p{
-	  font-size: 13px;
+	  font-size: 15px;
 	  line-height: 20px;
 	  margin-top: 0px;
 	}
   }
+  .navibar ul {
+	margin-top: 25px;
+  }
+  .funds span{
+	font-size: 65px;
+  }
 }
+
+//1200
 @media (min-width: 1200px) {
   .service-box {
-	h1{font-size: 36px;}
-	p {
-	  font-size: 18px;
-	}
+  h1{
+	font-size: 36px;
   }
+  p {
+	font-size: 18px;
+  }
+}
   .recycal{
 	h1 {
-	font-size: 30px;}
+	  font-size: 30px;}
 	p{
 	  font-size: 15px;
 	  line-height: 24px;
 	  margin-top: 14px;
 	}
   }
-  .cycle-icon{
-	p{
-	  font-size: 13px;
-	  font-weight: 600;
-	}
+  .cycle-icon p{
+	font-size: 13px;
+	font-weight: 600;
   }
+
 }
+
+//1280
 @media (min-width: 1280px) {
   .recycal {
 	h1{
-	font-size: 40px;}
+	  font-size: 40px;
+	  display: inline-block;
+
+	}
 	p{
 	  font-size: 18px;
 	  line-height: 30px;
@@ -590,7 +915,6 @@ ul{
 	}
   }
 }
-
 
 
 
