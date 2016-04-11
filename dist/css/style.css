@@ -580,7 +580,7 @@ ul {
 .gallery .gallery-nav li {
   display: inline-block;
   float: left;
-  padding: 0 9px 25px;
+  padding: 0 16px 25px;
 }
 .gallery .gallery-nav a {
   color: #fff;
